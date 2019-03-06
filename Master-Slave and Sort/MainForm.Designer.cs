@@ -126,7 +126,7 @@
             this.loopTextBox.Name = "loopTextBox";
             this.loopTextBox.Size = new System.Drawing.Size(100, 20);
             this.loopTextBox.TabIndex = 1;
-            this.loopTextBox.Text = "1000";
+            this.loopTextBox.Text = "100";
             // 
             // progressBar
             // 

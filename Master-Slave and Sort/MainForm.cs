@@ -194,8 +194,15 @@ namespace Master_Slave_and_Sort
             });
 
             selection.Start();
-            heap.Start();
-            quick.Start();
+            if (i % 2 == 0)
+            {
+                heap.Start();
+                quick.Start();
+            } else
+            {
+                quick.Start();
+                heap.Start();
+            }
 
         }
 
@@ -220,7 +227,7 @@ namespace Master_Slave_and_Sort
             }
             if (!int.TryParse(loopTextBox.Text, out loop))
             {
-                loop = 1000;
+                loop = 100;
             }
             resultLabel.Text = "";
             initProgressBars();
